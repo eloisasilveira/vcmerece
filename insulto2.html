@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>Top 5 Vacilos</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    .coracao {
+      width: 100px;
+      height: 90px;
+      background: red;
+      position: relative;
+      transform: rotate(-45deg);
+      animation: pulsa 1s infinite;
+      margin: 40px auto 0;
+    }
+
+    .coracao::before,
+    .coracao::after {
+      content: "";
+      width: 100px;
+      height: 90px;
+      background: red;
+      position: absolute;
+      border-radius: 50%;
+    }
+
+    .coracao::before {
+      top: -50px;
+      left: 0;
+    }
+
+    .coracao::after {
+      left: 50px;
+      top: 0;
+    }
+
+    @keyframes pulsa {
+      0% { transform: rotate(-45deg) scale(1); }
+      50% { transform: rotate(-45deg) scale(1.2); }
+      100% { transform: rotate(-45deg) scale(1); }
+    }
+  </style>
+</head>
+<body>
+    <h1>Top 5 Vacilos que você só faz por ser você</h1>
+    <ol>
+      <li>Pé frio- Toda vez que vai junto alguma coisa da ruim</li>
+      <li>Ser o nicolas</li>
+      <li>Insistir em ser Nicolas</li>
+      
+  <p>sabe aquela pessoa insuportavel q ninguem gosta? então se olha no espelho</p>
+  <div class="coracao"></div>
+
+  <button onclick="location.href='index.html'">Voltar</button>
+</body>
+</html>

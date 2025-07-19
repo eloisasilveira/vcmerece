@@ -1,0 +1,23 @@
+body {
+    background-color: #111;
+    color: #f33;
+    font-family: 'Georgia', serif;
+    text-align: center;
+    padding-top: 50px;
+  }
+  
+  button {
+    margin: 15px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff4444;
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+  }
+  
+  button:hover {
+    background-color: #ff0000;
+  }
